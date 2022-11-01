@@ -13,6 +13,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+picture {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
 }
 main {
   width: 375px;
@@ -21,6 +28,28 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px -10px hsl(224, 23%, 55%);
+  position: absolute;
+}
+.hero {
+  margin-bottom: 30px;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+.content {
+  margin: 0 30px;
+}
+.content h1 {
+  margin-bottom: 10px;
+}
+.content p {
+  color: hsl(224, 23%, 55%);
 }
 .choice {
   margin: 30px auto;
@@ -33,6 +62,7 @@ main {
 }
 .plan p {
   margin: 5px auto;
+  color: hsl(224, 23%, 55%);
 }
 a {
   text-decoration: none;
@@ -43,10 +73,18 @@ button {
   padding: 10px 80px;
   display: block;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+
 }
 #proceed {
-
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  box-shadow: 0 5px 20px -10px hsl(224, 23%, 55%);
+  
 }
 #cancel {
-
+  color: hsl(224, 23%, 55%);
 }
